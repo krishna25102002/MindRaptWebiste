@@ -1,0 +1,227 @@
+/**
+ * Careers page — typography & layout
+ */
+
+.careers-page-title h1 {
+  font-family: var(--serif-font);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.careers-page-title .careers-lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.92;
+}
+
+.careers-prose {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #334155;
+}
+
+.careers-prose h2,
+.careers-prose h3 {
+  font-family: var(--serif-font);
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.01em;
+}
+
+.careers-prose h2 {
+  font-size: 1.65rem;
+  margin-bottom: 1rem;
+}
+
+.careers-prose h3.careers-subhead {
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.careers-prose .careers-note {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--classical-gold);
+}
+
+.careers-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.careers-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #1e293b;
+  border-bottom: 1px solid rgba(12, 31, 63, 0.07);
+}
+
+.careers-benefits li:last-child {
+  border-bottom: none;
+}
+
+.careers-benefits i {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: var(--navy-mid);
+  font-size: 1.15rem;
+}
+
+.career-role-card {
+  display: flex;
+  gap: 1.15rem;
+  align-items: flex-start;
+  padding: 1.35rem 1.4rem;
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid rgba(12, 31, 63, 0.1);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-soft);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.career-role-card:hover {
+  border-color: rgba(201, 169, 97, 0.45);
+  box-shadow: var(--shadow-lift);
+}
+
+.career-role-card__icon {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #f4f6f9;
+  color: var(--navy-mid);
+  font-size: 1.35rem;
+  border: 1px solid rgba(12, 31, 63, 0.08);
+}
+
+.career-role-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.career-role-card__title {
+  font-family: var(--serif-font);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 0.4rem;
+  line-height: 1.35;
+}
+
+.career-role-card__text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0 0 0.75rem;
+}
+
+.career-role-card__tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--navy-mid);
+}
+
+.careers-sidebar {
+  position: sticky;
+  top: 7.5rem;
+}
+
+.careers-apply-panel {
+  background: #fff;
+  border: 1px solid rgba(12, 31, 63, 0.1);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.75rem;
+  border-top: 3px solid var(--classical-gold);
+}
+
+.careers-apply-panel h4 {
+  font-family: var(--serif-font);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.careers-apply-panel p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #475569;
+  margin-bottom: 1.25rem;
+}
+
+.careers-apply-panel .btn-careers-apply {
+  display: block;
+  text-align: center;
+  padding: 0.75rem 1.25rem;
+  background: var(--navy-mid);
+  color: #fff !important;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid rgba(201, 169, 97, 0.45);
+}
+
+.careers-apply-panel .btn-careers-apply:hover {
+  background: var(--navy);
+  color: #fff !important;
+}
+
+.careers-steps {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #64748b;
+}
+
+.careers-steps li {
+  display: flex;
+  gap: 0.65rem;
+  padding: 0.5rem 0;
+}
+
+.careers-steps strong {
+  flex-shrink: 0;
+  color: var(--classical-gold);
+  font-weight: 700;
+}
+
+.careers-email {
+  word-break: break-word;
+  font-weight: 600;
+  color: var(--navy-mid) !important;
+}
+
+@media (max-width: 991px) {
+  .careers-sidebar {
+    position: static;
+    top: auto;
+  }
+}
